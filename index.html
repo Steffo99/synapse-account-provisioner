@@ -8,9 +8,7 @@
 		<link rel="stylesheet" href="https://unpkg.com/@steffo/bluelib@9.0.1/dist/layouts-center.root.min.css" type="text/css" />
 		<link rel="stylesheet" href="https://unpkg.com/@steffo/bluelib@9.0.1/dist/colors-royalblue.root.min.css" type="text/css" />
 		<link rel="stylesheet" href="https://unpkg.com/@steffo/bluelib@9.0.1/dist/fonts-fira-ghpages.root.min.css" type="text/css" />
-		<script>
-
-		</script>
+		<script src="index.js"></script>
 	</head>
 	<body class="theme-bluelib layout-center">
 		<header>
@@ -23,18 +21,18 @@
 				Create a new account
 			</h2>
 			<div class="chapter-1">
-				<form class="panel box form-flex">
+				<form class="panel box form-flex" id="form-account">
 					<h3>
 						Homeserver details
 					</h3>
 					<label>
 						<span>URL</span>
-						<input disabled class="fade" type="text" name="homeserver" placeholder="https://uniberry.info">
+						<input type="text" id="input-homeserver" placeholder="https://uniberry.info">
 						<span></span>
 					</label>
 					<label>
 						<span>Secret</span>
-						<input disabled class="fade" type="text" name="homeserver" placeholder="June-Stardom-Matter-Thinly-Stream3-Curing">
+						<input type="text" id="input-registrationsecret" placeholder="June-Stardom-Matter-Thinly-Stream3-Curing">
 						<span></span>
 					</label>
 					<h3>
@@ -42,19 +40,24 @@
 					</h3>
 					<label>
 						<span>Username</span>
-						<input disabled class="fade" type="text" name="username" placeholder="steffo">
+						<input type="text" id="input-username" placeholder="steffo">
+						<span></span>
+					</label>
+					<label>
+						<span>Display name</span>
+						<input type="text" id="input-displayname" placeholder="Steffo">
 						<span></span>
 					</label>
 					<label>
 						<span>Password</span>
-						<input disabled class="fade" type="password" name="password" placeholder="hunter2">
+						<input type="password" id="input-password" placeholder="hunter2">
 						<span></span>
 					</label>
 					<div class="form-flex-choice">
 						<span>Privileges</span>
 						<div>
 							<label>
-								<input disabled class="fade" type="checkbox" name="isadmin">
+								<input type="checkbox" id="input-isadmin">
 								Homeserver administrator
 							</label>
 						</div>
@@ -65,9 +68,17 @@
 					</h3>
 					<label>
 						<span></span>
-						<button disabled class="fade">Create</button>
+						<button id="button-create">Create</button>
 						<span></span>
 					</label>
+					<h3>
+						Result
+					</h3>
+					<div class="form-flex-choice">
+						<span></span>
+						<pre><output><code id="output" class="fade">No output yet.</code></output></pre>
+						<span></span>
+					</div>
 				</form>
 			</div>
 		</main>
