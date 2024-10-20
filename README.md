@@ -16,4 +16,4 @@ Quickly create accounts on your private Synapse instance
 
 ## Links
 
-[![Website](https://img.shields.io/website?url=https%3A%2F%2Fgh.steffo.eu%2Fsynapse-account-provider%2F)](https://gh.steffo.eu/synapse-account-provider/)
+[![Website](https://img.shields.io/website?url=https%3A%2F%2Fgh.steffo.eu%2Fsynapse-account-provisioner%2F)](https://gh.steffo.eu/synapse-account-provisioner/)
